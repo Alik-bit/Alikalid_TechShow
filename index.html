@@ -1,15 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
-    <link rel="stylesheet" href="styles/main.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Kalid Ali – Engineering Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div id="root">
-        <h1>Welcome to My Portfolio Website</h1>
-        <p>This is a simple website using only HTML and CSS.</p>
+  <header>
+    <div class="container header-content">
+      <!-- Profile picture (replace src with your image file) -->
+      <img src="images/profile.jpg" alt="Kalid Ali Profile Photo" class="profile-img" />
+      <div>
+        <h1>Kalid Ali</h1>
+        <p>Computer Engineering Student at Saint Cloud State University</p>
+        <p>Embedded Systems | IoT | FPGA | PCB Design</p>
+      </div>
     </div>
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="about">
+      <h2>🧠 About Me</h2>
+      <ul>
+        <li>🎓 <b>B.S. in Computer Engineering</b> – Saint Cloud State University</li>
+        <li>💡 Passionate about <b>Embedded Systems</b>, <b>IoT</b>, <b>FPGA Development</b>, and <b>Automation</b></li>
+        <li>⚙️ Strong experience with <b>Vivado</b>, <b>ESP32</b>, <b>FreeRTOS</b>, <b>MPLAB X IDE</b>, <b>PCB design</b></li>
+        <li>👨‍💻 Career Goal: Embedded Software Engineer – building robust, scalable systems from low-level drivers to application logic</li>
+      </ul>
+      <!-- Example: Insert an additional about-me image below if desired -->
+      <!-- <img src="images/about-extra.jpg" alt="About Me Extra" class="about-img" /> -->
+      <!-- Or embed a video introduction:
+      <video controls class="about-video">
+        <source src="videos/intro.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      -->
+    </section>
+    <section id="projects">
+      <h2>🚀 Featured Projects</h2>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card">
+          <!-- Project image (replace with your own) -->
+          <img src="images/project-zynq.jpg" alt="Zynq LED Interrupt Controller" />
+          <h3>Zynq LED Interrupt Controller</h3>
+          <p>
+            Built an embedded system using <b>Zynq PS+PL architecture</b>. Used push buttons to trigger <b>external interrupts</b> for controlling four LED counters. Configured <b>AXI interconnect</b>, dual <b>GPIO controllers</b>, and wrote control logic in <b>C SDK</b>. Demonstrated real-time control of LEDs via BTNU, BTND, BTNL, BTNR, and BTNC.
+          </p>
+          <!-- Project video demo (optional) -->
+          <!--
+          <video controls class="project-video">
+            <source src="videos/zynq-demo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          -->
+          <!-- Or YouTube embed:
+          <div class="video-responsive">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+          </div>
+          -->
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <img src="images/project-irrigation.jpg" alt="Automated Water Irrigation System" />
+          <h3>Automated Water Irrigation System</h3>
+          <p>
+            Designed and soldered a custom PCB integrating <b>XKC-Y25-PNP</b>, moisture sensors, and relays. Used <b>ESP32</b> to control water pumps based on soil moisture and tank level readings. Implemented <b>timeout</b>, <b>watchdog</b>, and error-handling logic for reliability. Migrated from ultrasonic to non-contact sensors for better consistency.
+          </p>
+          <!--
+          <video controls class="project-video">
+            <source src="videos/irrigation-demo.mp4" type="video/mp4" />
+          </video>
+          -->
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <img src="images/project-uart.jpg" alt="UART Communication System" />
+          <h3>UART Communication System</h3>
+          <p>
+            Created a UART interface to convert decimal to hexadecimal and handle edge cases. Developed 4-stage parser: numeral conversion, A–F handling, invalid entry filtering, prefix processing. Debugged baud rate mismatch issues for reliable serial output.
+          </p>
+          <!--
+          <div class="video-responsive">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+          </div>
+          -->
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card">
+          <img src="images/project-rgbled.jpg" alt="RGB LED Duty Cycle Control" />
+          <h3>RGB LED Duty Cycle Control</h3>
+          <p>
+            Configured <b>Output Compare</b> pins to drive RGB LEDs with PWM. Mixed primary colors using variable duty cycles and timer settings. Analyzed visual output and fine-tuned timing for desired color blending.
+          </p>
+        </div>
+
+      </div>
+    </section>
+    <section id="skills">
+      <h2>🛠️ Skills</h2>
+      <div class="skills-grid">
+        <div>
+          <h4>Languages</h4>
+          <p>C, C++, Python, Verilog, Assembly (MIPS), Bash</p>
+        </div>
+        <div>
+          <h4>Tools & IDEs</h4>
+          <p>Vivado, MPLAB X IDE, Arduino IDE, VS Code, Git/GitHub, Octave</p>
+        </div>
+        <div>
+          <h4>Platforms & Frameworks</h4>
+          <p>ESP32, FreeRTOS, Zynq, UART, AXI, PWM, GPIO, SSH, OTA updates</p>
+        </div>
+        <div>
+          <h4>Other Experience</h4>
+          <p>PCB Design, Soldering, CI/CD Concepts, Sensor Calibration, Water Level Control Logic, Git Version Control</p>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>📫 Contact</h2>
+      <ul class="contact-list">
+        <li>📧 Email: <a href="mailto:alikalid.ems@gmail.com">alikalid.ems@gmail.com</a></li>
+        <li>💼 LinkedIn: <a href="https://linkedin.com/in/kalidali" target="_blank">linkedin.com/in/kalidali</a></li>
+        <li>📍 Based in St. Cloud, MN</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <small>© 2025 Kalid Ali | <a href="LICENSE">MIT License</a></small>
+    </div>
+  </footer>
 </body>
 </html>
