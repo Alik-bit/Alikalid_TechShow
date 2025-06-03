@@ -21,13 +21,21 @@
       .container { padding: 10px; }
       nav ul { flex-direction: column; gap: 10px; }
     }
-    video {
+    .video-container {
       margin-top: 8px;
       border-radius: 4px;
       background: #000;
-      outline: none;
+      overflow: hidden;
       max-width: 100%;
       height: auto;
+      display: block;
+      aspect-ratio: 16/9;
+      position: relative;
+    }
+    .video-container iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
       display: block;
     }
   </style>
@@ -58,7 +66,7 @@
       <h2>About</h2>
       <p><strong>Name:</strong> Kalid Ali</p>
       <p>
-        I am a Computer Engineering student at Saint Cloud State University, passionate about Embedded Systems, IoT, FPGA development, and automation. I enjoy building robust, scalable systems and have hands-on experience with a variety of hardware and software platforms.
+        I am a Computer Engineering student at Saint Cloud State University, passionate about Embedded Systems, IoT, FPGA development, and automation. I enjoy building robust, scalable systems and hav[...]
       </p>
     </section>
 
@@ -69,25 +77,23 @@
       <div class="project-card">
         <h3>Zynq LED Interrupt Controller</h3>
         <p>
-          Built an embedded system using Zynq PS+PL architecture. Used push buttons to trigger external interrupts for controlling four LED counters. Configured AXI interconnects for seamless communication between Processing System and Programmable Logic.
+          Built an embedded system using Zynq PS+PL architecture. Used push buttons to trigger external interrupts for controlling four LED counters. Configured AXI interconnects for seamless communic[...]
         </p>
         <label>Project Demo Video:</label><br>
-        <video controls width="320" poster="">
-          <source src="videos/zynq-demo.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/axWZzuEVEWs" frameborder="0" allowfullscreen></iframe>
+        </div>
       </div>
 
       <div class="project-card">
         <h3>Automated Water Irrigation System</h3>
         <p>
-          Designed and soldered a custom PCB integrating XKC-Y25-PNP, moisture sensors, and relays. Used ESP32 to control water pumps based on soil moisture and tank level readings. Implemented wireless monitoring and control features.
+          Designed and soldered a custom PCB integrating XKC-Y25-PNP, moisture sensors, and relays. Used ESP32 to control water pumps based on soil moisture and tank level readings. Implemented wirele[...]
         </p>
         <label>Project Demo Video:</label><br>
-        <video controls width="320" poster="">
-          <source src="videos/irrigation-demo.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/axWZzuEVEWs" frameborder="0" allowfullscreen></iframe>
+        </div>
       </div>
 
       <div class="project-card">
@@ -96,22 +102,20 @@
           Created a UART interface to convert decimal to hexadecimal and handle edge cases. Developed 4-stage parser: numeral conversion, A–F handling, invalid entry filtering, prefix processing.
         </p>
         <label>Project Demo Video:</label><br>
-        <video controls width="320" poster="">
-          <source src="videos/uart-demo.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/axWZzuEVEWs" frameborder="0" allowfullscreen></iframe>
+        </div>
       </div>
 
       <div class="project-card">
         <h3>RGB LED Duty Cycle Control</h3>
         <p>
-          Configured Output Compare pins to drive RGB LEDs with PWM. Mixed primary colors using variable duty cycles and timer settings. Analyzed visual output and fine-tuned timing for desired color blending.
+          Configured Output Compare pins to drive RGB LEDs with PWM. Mixed primary colors using variable duty cycles and timer settings. Analyzed visual output and fine-tuned timing for desired color [...]
         </p>
         <label>Project Demo Video:</label><br>
-        <video controls width="320" poster="">
-          <source src="videos/rgbled-demo.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/axWZzuEVEWs" frameborder="0" allowfullscreen></iframe>
+        </div>
       </div>
     </section>
 
