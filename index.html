@@ -21,6 +21,15 @@
       .container { padding: 10px; }
       nav ul { flex-direction: column; gap: 10px; }
     }
+    video {
+      margin-top: 8px;
+      border-radius: 4px;
+      background: #000;
+      outline: none;
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
   </style>
 </head>
 <body>
@@ -28,10 +37,10 @@
     <div class="container">
       <nav>
         <ul>
-          <li><a href="#" onclick="showSection('home')">Home</a></li>
-          <li><a href="#" onclick="showSection('about')">About</a></li>
-          <li><a href="#" onclick="showSection('projects')">Projects</a></li>
-          <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+          <li><a href="#" onclick="showSection('home');return false;">Home</a></li>
+          <li><a href="#" onclick="showSection('about');return false;">About</a></li>
+          <li><a href="#" onclick="showSection('projects');return false;">Projects</a></li>
+          <li><a href="#" onclick="showSection('contact');return false;">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -62,13 +71,11 @@
         <p>
           Built an embedded system using Zynq PS+PL architecture. Used push buttons to trigger external interrupts for controlling four LED counters. Configured AXI interconnects for seamless communication between Processing System and Programmable Logic.
         </p>
-        <!-- Place for video demo -->
-        <div>
-         <div>
-     <label>Project Demo Video:</label><br>
-  <!-- Embed your video link below -->
-  <!-- <video controls width="320"><source src="videos/zynq-demo.mp4" type="video/mp4"></video> -->
-     </div>
+        <label>Project Demo Video:</label><br>
+        <video controls width="320" poster="">
+          <source src="videos/zynq-demo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
       </div>
 
       <div class="project-card">
@@ -76,10 +83,11 @@
         <p>
           Designed and soldered a custom PCB integrating XKC-Y25-PNP, moisture sensors, and relays. Used ESP32 to control water pumps based on soil moisture and tank level readings. Implemented wireless monitoring and control features.
         </p>
-        <div>
-          <label>Project Demo Video:</label><br>
-          <!-- <video controls width="320"><source src="videos/irrigation-demo.mp4" type="video/mp4"></video> -->
-        </div>
+        <label>Project Demo Video:</label><br>
+        <video controls width="320" poster="">
+          <source src="videos/irrigation-demo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
       </div>
 
       <div class="project-card">
@@ -87,10 +95,11 @@
         <p>
           Created a UART interface to convert decimal to hexadecimal and handle edge cases. Developed 4-stage parser: numeral conversion, A–F handling, invalid entry filtering, prefix processing.
         </p>
-        <div>
-          <label>Project Demo Video:</label><br>
-          <!-- <video controls width="320"><source src="videos/uart-demo.mp4" type="video/mp4"></video> -->
-        </div>
+        <label>Project Demo Video:</label><br>
+        <video controls width="320" poster="">
+          <source src="videos/uart-demo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
       </div>
 
       <div class="project-card">
@@ -98,10 +107,11 @@
         <p>
           Configured Output Compare pins to drive RGB LEDs with PWM. Mixed primary colors using variable duty cycles and timer settings. Analyzed visual output and fine-tuned timing for desired color blending.
         </p>
-        <div>
-          <label>Project Demo Video:</label><br>
-          <!-- <video controls width="320"><source src="videos/rgbled-demo.mp4" type="video/mp4"></video> -->
-        </div>
+        <label>Project Demo Video:</label><br>
+        <video controls width="320" poster="">
+          <source src="videos/rgbled-demo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
       </div>
     </section>
 
