@@ -4,150 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <title>Kalid Ali – Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: linear-gradient(-45deg, #4158d0, #c850c0, #ffcc70, #0093e9);
-      background-size: 400% 400%;
-      animation: gradientBG 15s ease infinite;
-    }
-    @keyframes gradientBG {
-      0% {background-position: 0% 50%;}
-      50% {background-position: 100% 50%;}
-      100% {background-position: 0% 50%;}
-    }
-    header { background: #222; color: #fff; padding: 20px 0; }
-    .container { max-width: 900px; margin: 0 auto; padding: 20px; }
-    nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 30px; }
-    nav ul li { display: inline; }
-    nav a, .nav-btn {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      background: none;
-      border: none;
-      padding: 8px 18px;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background 0.3s, color 0.3s;
-      font-size: 1em;
-    }
-    nav a:hover, .nav-btn:hover {
-      background: #fff;
-      color: #222;
-      text-decoration: none;
-    }
-    section { display: none; background: #fff; border-radius: 8px; margin-top: 30px; padding: 30px; }
-    section.active { display: block; }
-    .project-card { margin-bottom: 30px; border: 1px solid #eee; border-radius: 6px; padding: 15px; background: #fafafa; }
-    .project-card h3 { margin-top: 0; }
-    footer { text-align: center; padding: 20px; background: #222; color: #fff; margin-top: 40px; }
-    @media (max-width: 600px) {
-      .container { padding: 10px; }
-      nav ul { flex-direction: column; gap: 10px; }
-    }
-    .video-container {
-      margin-top: 8px;
-      border-radius: 4px;
-      background: #000;
-      overflow: hidden;
-      max-width: 100%;
-      height: auto;
-      display: block;
-      aspect-ratio: 16/9;
-      position: relative;
-    }
-    .video-container iframe {
-      width: 100%;
-      height: 100%;
-      border: 0;
-      display: block;
-    }
-    /* Source File Section */
-    .source-section {
-      display: none;
-      background: #fff;
-      border-radius: 8px;
-      margin-top: 30px;
-      padding: 30px;
-      box-shadow: 0 2px 12px rgba(65, 88, 208, 0.15);
-      animation: fadeIn 0.5s;
-    }
-    .source-section.active {
-      display: block;
-    }
-    .source-tabs {
-      display: flex;
-      gap: 15px;
-      margin-bottom: 25px;
-    }
-    .source-tab-btn {
-      padding: 8px 18px;
-      border-radius: 5px;
-      border: none;
-      background: #4158d0;
-      color: #fff;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background 0.3s, color 0.3s;
-      outline: none;
-    }
-    .source-tab-btn.active, .source-tab-btn:hover {
-      background: #fff;
-      color: #4158d0;
-      border: 1px solid #4158d0;
-    }
-    .source-tab-content {
-      display: none;
-    }
-    .source-tab-content.active {
-      display: block;
-      animation: fadeIn 0.5s;
-    }
-    @keyframes fadeIn {
-      from {opacity: 0;}
-      to {opacity: 1;}
-    }
-    .photo-gallery {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-    }
-    .photo-gallery img {
-      max-width: 180px;
-      border-radius: 8px;
-      box-shadow: 0 1px 8px rgba(0,0,0,0.08);
-    }
-    .source-code-area {
-      background: #f5f5fa;
-      border-radius: 8px;
-      padding: 18px;
-      font-family: 'Fira Mono', 'Consolas', monospace;
-      overflow-x: auto;
-      margin-top: 12px;
-      font-size: 1em;
-      color: #3a3a3a;
-      border: 1px solid #e0e0e0;
-    }
-    .close-btn {
-      float: right;
-      background: #c850c0;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      padding: 4px 12px;
-      cursor: pointer;
-      font-weight: bold;
-      margin-top: -14px;
-      margin-right: -14px;
-      transition: background 0.2s;
-    }
-    .close-btn:hover {
-      background: #ffcc70;
-      color: #c850c0;
-    }
-  </style>
+  <link rel="stylesheet" href="main.css" />
 </head>
 <body>
   <header>
@@ -166,79 +23,52 @@
     </div>
   </header>
 
-  <main class="container">
+  <main>
     <!-- Home Section -->
-    <section id="home" class="active">
+    <section id="home" class="active home-section">
       <h2>Welcome to my portfolio</h2>
       <p>Hello and welcome! Explore my work and background using the navigation above.</p>
     </section>
 
     <!-- About Section -->
     <section id="about">
-      <h2>About</h2>
-      <p><strong>Name:</strong> Kalid Ali</p>
-      <p>
-        I am a Computer Engineering student at Saint Cloud State University, passionate about Embedded Systems, IoT, FPGA development, and automation. I enjoy building robust, scalable systems and have a keen interest in hardware-software integration.
-      </p>
+      <div class="container">
+        <h2>About</h2>
+        <p><strong>Name:</strong> Kalid Ali</p>
+        <p>
+          I am a Computer Engineering student at Saint Cloud State University, passionate about Embedded Systems, IoT, FPGA development, and automation. I enjoy building robust, scalable systems and have a keen interest in hardware-software integration.
+        </p>
+      </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
-      <h2>Projects</h2>
-
-      <div class="project-card">
-        <h3>Zynq LED Interrupt Controller</h3>
-        <p>
-          Built an embedded system using Zynq PS+PL architecture. Used push buttons to trigger external interrupts for controlling four LED counters. Configured AXI interconnects for seamless communication between the processing system and programmable logic.
-        </p>
-        <label>Project Demo Video:</label><br>
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/axWZzuEVEWs" frameborder="0" allowfullscreen></iframe>
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="project-card">
+          <h3>Zynq LED Interrupt Controller</h3>
+          <p>
+            Built an embedded system using Zynq PS+PL architecture. Used push buttons to trigger external interrupts for controlling four LED counters. Configured AXI interconnects for seamless communication between the processing system and programmable logic.
+          </p>
+          <label>Project Demo Video:</label><br>
+          <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/axWZzuEVEWs" frameborder="0" allowfullscreen></iframe>
+          </div>
         </div>
-      </div>
-
-      <div class="project-card">
-        <h3>Automated Water Irrigation System</h3>
-        <p>
-          Designed and soldered a custom PCB integrating XKC-Y25-PNP, moisture sensors, and relays. Used ESP32 to control water pumps based on soil moisture and tank level readings. Implemented wireless communication and error handling for robust automation.
-        </p>
-        <label>Project Demo Video:</label><br>
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/axWZzuEVEWs" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <h3>UART Communication System</h3>
-        <p>
-          Created a UART interface to convert decimal to hexadecimal and handle edge cases. Developed 4-stage parser: numeral conversion, A–F handling, invalid entry filtering, prefix processing.
-        </p>
-        <label>Project Demo Video:</label><br>
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/axWZzuEVEWs" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <h3>RGB LED Duty Cycle Control</h3>
-        <p>
-          Configured Output Compare pins to drive RGB LEDs with PWM. Mixed primary colors using variable duty cycles and timer settings. Analyzed visual output and fine-tuned timing for desired color blending.
-        </p>
-        <label>Project Demo Video:</label><br>
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/axWZzuEVEWs" frameborder="0" allowfullscreen></iframe>
-        </div>
+        <!-- Additional project-cards as needed -->
       </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
-      <h2>Contact</h2>
-      <ul>
-        <li>Email: <a href="mailto:alikalid.ems@gmail.com">alikalid.ems@gmail.com</a></li>
-        <li>LinkedIn: <a href="https://linkedin.com/in/kalidali" target="_blank">linkedin.com/in/kalidali</a></li>
-        <li>Based in St. Cloud, MN</li>
-      </ul>
+      <div class="container">
+        <h2>Contact</h2>
+        <ul>
+          <li>Email: <a href="mailto:alikalid.ems@gmail.com">alikalid.ems@gmail.com</a></li>
+          <li>LinkedIn: <a href="https://linkedin.com/in/kalidali" target="_blank">linkedin.com/in/kalidali</a></li>
+          <li>Based in St. Cloud, MN</li>
+        </ul>
+      </div>
     </section>
 
     <!-- Source File Section (hidden by default) -->
@@ -248,21 +78,17 @@
       <div class="source-tabs">
         <button class="source-tab-btn active" onclick="showTab('photos', this)">Project Photos</button>
         <button class="source-tab-btn" onclick="showTab('code', this)">Source Code</button>
-        <!-- Add more tabs here if needed -->
       </div>
       <div id="tab-photos" class="source-tab-content active">
         <h3>Project Photos</h3>
         <div class="photo-gallery">
-          <!-- Example images, replace src with your own photo URLs or files -->
           <img src="https://via.placeholder.com/180x120?text=Photo+1" alt="Project Photo 1" />
           <img src="https://via.placeholder.com/180x120?text=Photo+2" alt="Project Photo 2" />
-          <!-- Add more images as needed -->
         </div>
       </div>
       <div id="tab-code" class="source-tab-content">
         <h3>Source Code</h3>
         <div class="source-code-area">
-          <!-- Example code, replace with your own code/files -->
 <pre>
 #include &lt;stdio.h&gt;
 int main() {
@@ -270,7 +96,6 @@ int main() {
   return 0;
 }
 </pre>
-          <!-- You can insert downloadable files or code snippets here -->
         </div>
       </div>
     </section>
@@ -284,7 +109,6 @@ int main() {
 
   <script>
     function showSection(id) {
-      // Hide all main sections and source section
       document.querySelectorAll('main section').forEach(
         s => s.classList.remove('active')
       );
@@ -292,7 +116,6 @@ int main() {
       document.getElementById('source-section').classList.remove('active');
     }
     function showSourceSection() {
-      // Hide all main sections
       document.querySelectorAll('main section').forEach(
         s => s.classList.remove('active')
       );
@@ -300,16 +123,13 @@ int main() {
     }
     function hideSourceSection() {
       document.getElementById('source-section').classList.remove('active');
-      // Show Home by default when closing source section
       showSection('home');
     }
     function showTab(tab, btn) {
-      // Hide all tab content
       document.querySelectorAll('.source-tab-content').forEach(
         t => t.classList.remove('active')
       );
       document.getElementById('tab-' + tab).classList.add('active');
-      // Remove active class from all tab buttons
       document.querySelectorAll('.source-tab-btn').forEach(
         b => b.classList.remove('active')
       );
