@@ -118,10 +118,9 @@
       </div>
       <div id="tab-photos" class="source-tab-content active">
         <h3>Project Photos</h3>
-        <div class="photo-gallery">
-          <img src="https://via.placeholder.com/180x120?text=Photo+1" alt="Project Photo 1" />
-          <img src="https://via.placeholder.com/180x120?text=Photo+2" alt="Project Photo 2" />
-        </div>
+        <button id="add-photo-btn" type="button">Add Photo</button>
+        <input type="file" id="photo-input" accept="image/*" style="display:none" multiple>
+        <div class="photo-gallery" id="photo-gallery"></div>
       </div>
       <div id="tab-code" class="source-tab-content">
         <h3>Source Code</h3>
@@ -144,34 +143,6 @@ int main() {
     </div>
   </footer>
 
-  <script>
-    function showSection(id) {
-      document.querySelectorAll('main section').forEach(
-        s => s.classList.remove('active')
-      );
-      document.getElementById(id).classList.add('active');
-      document.getElementById('source-section').classList.remove('active');
-    }
-    function showSourceSection() {
-      document.querySelectorAll('main section').forEach(
-        s => s.classList.remove('active')
-      );
-      document.getElementById('source-section').classList.add('active');
-    }
-    function hideSourceSection() {
-      document.getElementById('source-section').classList.remove('active');
-      showSection('home');
-    }
-    function showTab(tab, btn) {
-      document.querySelectorAll('.source-tab-content').forEach(
-        t => t.classList.remove('active')
-      );
-      document.getElementById('tab-' + tab).classList.add('active');
-      document.querySelectorAll('.source-tab-btn').forEach(
-        b => b.classList.remove('active')
-      );
-      btn.classList.add('active');
-    }
-  </script>
+  <script src="main.js"></script>
 </body>
 </html>
