@@ -14,6 +14,7 @@
           <li><a href="#" onclick="showSection('home');return false;">Home</a></li>
           <li><a href="#" onclick="showSection('about');return false;">About</a></li>
           <li><a href="#" onclick="showSection('projects');return false;">Projects</a></li>
+          <li><a href="#" onclick="showSection('skills');return false;">Skills</a></li>
           <li><a href="#" onclick="showSection('contact');return false;">Contact</a></li>
           <li>
             <a class="nav-btn" href="#" onclick="showSourceSection();return false;">Source File</a>
@@ -26,73 +27,94 @@
   <main>
     <!-- Home Section -->
     <section id="home" class="active home-section">
-      <h2>Welcome to my portfolio</h2>
-      <p>Hello and welcome! Explore my work and background using the navigation above.</p>
+      <h2>Welcome to my engineering portfolio!</h2>
+      <p>
+        I'm <strong>Kalid Ali</strong>, a Computer Engineering graduate from Saint Cloud State University, with hands-on experience in embedded systems, IoT, FPGA, and PCB design.
+      </p>
+      <p>
+        Explore my projects, background, and skills using the navigation above.
+      </p>
     </section>
 
     <!-- About Section -->
     <section id="about">
       <div class="container">
-        <h2>About</h2>
+        <h2>About Me</h2>
         <p><strong>Name:</strong> Kalid Ali</p>
         <p>
-          I am a Computer Engineering student at Saint Cloud State University, passionate about Embedded Systems, IoT, FPGA development, and automation. I enjoy building robust, scalable systems and have a keen interest in hardware-software integration.
+          Computer Engineering graduate with strong skills in C, C++, Python, C#, and MATLAB. Experienced in developing real-time and embedded systems using tools like Vivado and Keil uVision.
+          Passionate about building robust solutions in hardware and software, with a focus on reliability and efficiency.
         </p>
+        <ul>
+          <li>Hands-on experience in embedded systems, IoT, FPGA, and PCB design.</li>
+          <li>Skilled in real-time hardware-software integration and automation.</li>
+          <li>Background in sensor calibration, CI/CD concepts, and water level control logic.</li>
+        </ul>
       </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
       <div class="container">
-        <h2>Projects</h2>
+        <h2>Featured Projects</h2>
 
         <!-- Project 1 -->
         <div class="project-card">
-          <h3>Zynq LED Interrupt Controller</h3>
+          <h3>🎲 Two-Player Dice Game (ZedBoard + UART + C# GUI)</h3>
           <p>
-            Built an embedded system using Zynq PS+PL architecture. Used push buttons to trigger external interrupts for controlling four LED counters. Configured AXI interconnects for seamless communication between the processing system and programmable logic.
+            Implements a two-player dice game using the ZedBoard (Xilinx Zynq-7000 SoC), where the embedded system communicates with a Windows-based C# graphical user interface (GUI) via UART serial. Developed using Vivado Design Suite, Xilinx IP blocks, and embedded C code. Demonstrates real-time hardware-software communication, user-friendly interface design, and the integration of embedded and application-level programming.
           </p>
-          <label>Project Demo Video:</label><br>
-          <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/axWZzuEVEWs" frameborder="0" allowfullscreen></iframe>
-          </div>
+          <ul>
+            <li><strong>Key Technologies:</strong> Vivado Design Suite, Xilinx Zynq-7000 SoC, UART Serial Communication, Embedded C, C# Windows Forms GUI</li>
+          </ul>
         </div>
 
         <!-- Project 2 -->
         <div class="project-card">
-          <h3>Automated Water Irrigation System</h3>
+          <h3>🔷 Automated Water Irrigation System (ESP32, Sensors, PCB)</h3>
           <p>
-            Designed and soldered a custom PCB integrating XKC-Y25-PNP, moisture sensors, and relays. Used ESP32 to control water pumps based on soil moisture and tank level readings. Implemented wireless communication and error handling for robust automation.
+            Designed and soldered a custom PCB integrating <strong>XKC-Y25-PNP</strong>, moisture sensors, and relays. Used <strong>ESP32</strong> to control water pumps based on soil moisture and tank level readings. Implemented <strong>timeout</strong>, <strong>watchdog</strong>, and error-handling logic for reliability. Migrated from ultrasonic to non-contact sensors for better consistency.
           </p>
-          <label>Project Demo Video:</label><br>
-          <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/axWZzuEVEWs" frameborder="0" allowfullscreen></iframe>
-          </div>
         </div>
 
         <!-- Project 3 -->
         <div class="project-card">
-          <h3>UART Communication System</h3>
+          <h3>🔷 UART Communication System (Verilog, FPGA)</h3>
           <p>
-            Created a UART interface to convert decimal to hexadecimal and handle edge cases. Developed 4-stage parser: numeral conversion, A–F handling, invalid entry filtering, prefix processing.
+            Created a UART interface to convert decimal to hexadecimal and handle edge cases. Developed 4-stage parser: numeral conversion, A–F handling, invalid entry filtering, prefix processing. Debugged baud rate mismatch issues for reliable serial output.
           </p>
-          <label>Project Demo Video:</label><br>
-          <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/axWZzuEVEWs" frameborder="0" allowfullscreen></iframe>
-          </div>
         </div>
 
         <!-- Project 4 -->
         <div class="project-card">
-          <h3>RGB LED Duty Cycle Control</h3>
+          <h3>🔷 RGB LED Duty Cycle Control (Microchip, MPLAB X)</h3>
           <p>
-            Configured Output Compare pins to drive RGB LEDs with PWM. Mixed primary colors using variable duty cycles and timer settings. Analyzed visual output and fine-tuned timing for desired color blending.
+            Configured <strong>Output Compare</strong> pins to drive RGB LEDs with PWM. Mixed primary colors using variable duty cycles and timer settings. Analyzed visual output and fine-tuned timing for desired color blending.
           </p>
-          <label>Project Demo Video:</label><br>
-          <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/axWZzuEVEWs" frameborder="0" allowfullscreen></iframe>
-          </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <strong>Languages:</strong>
+        <ul>
+          <li>C, C++, Python, C#, MATLAB, Verilog, Assembly (MIPS), Bash</li>
+        </ul>
+        <strong>Tools &amp; IDEs:</strong>
+        <ul>
+          <li>Vivado, Keil uVision, MPLAB X IDE, Arduino IDE, VS Code, Git/GitHub, Octave</li>
+        </ul>
+        <strong>Platforms &amp; Frameworks:</strong>
+        <ul>
+          <li>ESP32, FreeRTOS, Zynq, AXI, PWM, GPIO, SSH, OTA updates</li>
+        </ul>
+        <strong>Other Experience:</strong>
+        <ul>
+          <li>PCB Design, Soldering, CI/CD Concepts, Sensor Calibration, Water Level Control Logic, Git Version Control</li>
+        </ul>
       </div>
     </section>
 
@@ -103,6 +125,7 @@
         <ul>
           <li>Email: <a href="mailto:alikalid.ems@gmail.com">alikalid.ems@gmail.com</a></li>
           <li>LinkedIn: <a href="https://linkedin.com/in/kalidali" target="_blank">linkedin.com/in/kalidali</a></li>
+          <li>Portfolio Site (optional): <em>Coming soon</em></li>
           <li>Based in St. Cloud, MN</li>
         </ul>
       </div>
@@ -139,7 +162,7 @@ int main() {
 
   <footer>
     <div class="container">
-      <small>© 2025 Kalid Ali | Portfolio</small>
+      <small>© 2025 Kalid Ali | Portfolio &middot; <a href="LICENSE" style="color:#fff;text-decoration:underline;">MIT License</a></small>
     </div>
   </footer>
 
