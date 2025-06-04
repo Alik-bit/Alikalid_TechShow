@@ -1,25 +1,28 @@
 # Kalid Ali – Engineering Portfolio
 
-Welcome to my engineering portfolio! I'm **Kalid Ali**, a Computer Engineering student at Saint Cloud State University , with hands-on experience in embedded systems, IoT, FPGA, and PCB design. This repository showcases the academic and personal projects I’ve built to bridge hardware and software in real-world systems.
+Welcome to my engineering portfolio! I'm **Kalid Ali**, a Computer Engineering graduate from Saint Cloud State University, with hands-on experience in embedded systems, IoT, FPGA, and PCB design. I am passionate about leveraging my skills across software, hardware, electrical, and embedded domains to drive innovation and solve real-world problems.
 
 ---
 
 ## 🧠 About Me
 
-- 🎓 **B.S. in Computer Engineering** – Saint Cloud State University 
-- 💡 Passionate about **Embedded Systems**, **IoT**, **FPGA Development**, and **Automation**
-- ⚙️ Strong experience with **Vivado**, **ESP32**, **FreeRTOS**, **MPLAB X IDE**, and **PCB design**
-- 👨‍💻 Career Goal: Embedded Software Engineer – building robust, scalable systems from low-level drivers to application logic
+Computer Engineering graduate with strong skills in C, C++, Python, C#, and MATLAB. Experienced in developing real-time and embedded systems using tools like Vivado and Keil uVision. Passionate about driving innovation across software, hardware, electrical, and embedded domains. Eager to bring technical expertise and a problem-solving mindset to forward-thinking teams, contributing to impactful solutions in any area of computer engineering.
 
 ---
 
 ## 🚀 Featured Projects
 
-### 🔷 Zynq LED Interrupt Controller (Vivado, SDK, ZedBoard)
-- Built an embedded system using **Zynq PS+PL architecture**
-- Used push buttons to trigger **external interrupts** for controlling four LED counters
-- Configured **AXI interconnect**, dual **GPIO controllers**, and wrote control logic in **C SDK**
-- Demonstrated real-time control of LEDs via BTNU, BTND, BTNL, BTNR, and BTNC
+### 🎲 Two-Player Dice Game (ZedBoard + UART + C# GUI)
+This project implements a two-player dice game using the ZedBoard (Xilinx Zynq-7000 SoC), where the embedded system communicates with a Windows-based C# graphical user interface (GUI) via UART serial. Each player takes turns rolling a virtual dice over five rounds, with their scores accumulated and displayed on the GUI. After five turns each, the player with the highest total wins.
+
+The project was developed using the Vivado Design Suite, Xilinx IP blocks, and embedded C code. It demonstrates real-time hardware-software communication, user-friendly interface design, and the integration of embedded hardware with desktop applications.
+
+**Key Technologies:**
+- Vivado Design Suite
+- Xilinx Zynq-7000 SoC
+- UART Serial Communication
+- Embedded C
+- C# Windows Forms GUI
 
 ### 🔷 Automated Water Irrigation System (ESP32, Sensors, PCB)
 - Designed and soldered a custom PCB integrating **XKC-Y25-PNP**, moisture sensors, and relays
@@ -42,13 +45,13 @@ Welcome to my engineering portfolio! I'm **Kalid Ali**, a Computer Engineering s
 ## 🛠️ Skills
 
 **Languages:**  
-C, C++, Python, Verilog, Assembly (MIPS), Bash
+C, C++, Python, C#, MATLAB, Verilog, Assembly (MIPS), Bash
 
 **Tools & IDEs:**  
-Vivado, MPLAB X IDE, Arduino IDE, VS Code, Git/GitHub, Octave
+Vivado, Keil uVision, MPLAB X IDE, Arduino IDE, VS Code, Git/GitHub, Octave
 
 **Platforms & Frameworks:**  
-ESP32, FreeRTOS, Zynq, UART, AXI, PWM, UART, GPIO, SSH, OTA updates
+ESP32, FreeRTOS, Zynq, AXI, PWM, GPIO, SSH, OTA updates
 
 **Other Experience:**  
 PCB Design, Soldering, CI/CD Concepts, Sensor Calibration, Water Level Control Logic, Git Version Control
@@ -71,4 +74,3 @@ This repository is licensed under the [MIT License](LICENSE).
 ---
 
 Thanks for visiting! Feel free to explore my projects and reach out if you'd like to collaborate or learn more.
-
