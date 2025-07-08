@@ -62,7 +62,7 @@ PCB Design, Soldering, CI/CD Concepts, Sensor Calibration, Water Level Control L
 
 - 📧 Email: alikalid.ems@gmail.com
 - 💼 LinkedIn: [linkedin.com/in/kalidali](https://linkedin.com/in/kalidali)  
-- 🌐 Portfolio Site (optional): _Coming soon_  
+- 🌐 Portfolio Site : https://alik-bit.github.io/Alikalid_TechShow/ 
 - 📍 Based in St. Cloud, MN
 
 ---
