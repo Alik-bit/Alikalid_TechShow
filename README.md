@@ -34,6 +34,13 @@ The project was developed using the Vivado Design Suite, Xilinx IP blocks, and e
 - C# Windows Forms GUI
 
   
+## ⚙️ Digital PI Controller – Closed-Loop System
+   💻 PIC28 | 🔧 Embedded C | 📊 ADC/DAC | 🧠 Feedback Control
+- Developed and tuned a digital PI controller on a PIC28 to regulate a closed-loop system.
+- Achieved precise performance with 3.8% overshoot and 0.33s settling time.
+- Designed supporting analog circuitry, including a voltage divider and summing op-amp for real-time error signal generation.
+- Validated controller behavior and system stability using an oscilloscope.
+  
 ## 🌡️ Real-Time Temperature Monitoring & Data Logging
   - Designed a system using LM35 sensor with firmware for real-time measurement and UART-based data logging.
   - Developed embedded firmware in **MPLAB IDE** for the **PIC28 microcontroller**  to continuously measure, average, and transmit temperature data via  via **UART**.
