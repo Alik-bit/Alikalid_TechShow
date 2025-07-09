@@ -1,4 +1,4 @@
-# Kalid Ali – Engineering Portfolio
+# Kalid Ali – MY Computer Engineering Portfolio
 
 Welcome to my engineering portfolio! I'm **Kalid Ali**, a Computer Engineering graduate from Saint Cloud State University, with hands-on experience in embedded systems, IoT, FPGA, and PCB design. I am passionate about leveraging my skills across software, hardware, electrical, and embedded domains to drive innovation and solve real-world problems.
 
