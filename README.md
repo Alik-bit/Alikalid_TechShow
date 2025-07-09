@@ -12,6 +12,15 @@ Computer Engineering graduate with strong skills in C, C++, Python, C#, and MATL
 
 ## 🚀 Featured Projects
 
+
+### 🔷 Automated Irrigation System AND Monitoring
+  -Built a fully automated system using ESP32, moisture sensors, non-contact water level sensors, humidity and temperature sensors.
+- Designed and soldered a custom PCB **embedded** with **XKC-Y25-PNP** non-contact water level sensors, moisture sensors, relays,Water pumps
+- Used **ESP32** to control water pumps based on soil moisture and tank level readings
+- Implemented **timeout**, **watchdog**, and error-handling logic for reliability
+- Developed real-time algorithms for irrigation control and enabled mobile-based remote monitoring.
+- Presented at the TMIT Student Research Colloquium, 2024
+
 ### 🎲 Two-Player Dice Game (ZedBoard + UART + C# GUI)
 This project implements a two-player dice game using the ZedBoard (Xilinx Zynq-7000 SoC), where the embedded system communicates with a Windows-based C# graphical user interface (GUI) via UART serial. Each player takes turns rolling a virtual dice over five rounds, with their scores accumulated and displayed on the GUI. After five turns each, the player with the highest total wins.
 
@@ -23,24 +32,17 @@ The project was developed using the Vivado Design Suite, Xilinx IP blocks, and e
 - UART Serial Communication
 - Embedded C
 - C# Windows Forms GUI
+🌡️ Real-Time Temperature Monitoring & Data Logging
+  -Designed a system using LM35 sensor with firmware for real-time measurement and UART-based data logging.
+  -Developed embedded firmware in **MPLAB IDE** for the **PIC28 microcontroller**  to continuously measure, average, and transmit temperature data via  via **UART**.
+  -Created a **Python-based serial communication** interface to capture data from the microcontroller,
+      timestamp readings, and log them into CSV format for further analysis.
 
-### 🔷 Automated Water Irrigation System (ESP32, Sensors, PCB)
-- Designed and soldered a custom PCB integrating **XKC-Y25-PNP**, moisture sensors, and relays
-- Used **ESP32** to control water pumps based on soil moisture and tank level readings
-- Implemented **timeout**, **watchdog**, and error-handling logic for reliability
-- Migrated from ultrasonic to non-contact sensors for better consistency
+🔐 Secure Cloud Data Transmission
+- Engineered a secure data transmission system using RSA encryption, DFS (Distributed File System), and SSH key authentication.
+- Deployed the system on Virtual Private Servers (VPS) with geographically distributed storage for redundancy and security.
+-Configured secure file access and permission controls to prevent unauthorized entry and support scalable, multi-user environments.
 
-### 🔷 UART Communication System (Verilog, FPGA)
-- Created a UART interface to convert decimal to hexadecimal and handle edge cases
-- Developed 4-stage parser: numeral conversion, A–F handling, invalid entry filtering, prefix processing
-- Debugged baud rate mismatch issues for reliable serial output
-
-### 🔷 RGB LED Duty Cycle Control (Microchip, MPLAB X)
-- Configured **Output Compare** pins to drive RGB LEDs with PWM
-- Mixed primary colors using variable duty cycles and timer settings
-- Analyzed visual output and fine-tuned timing for desired color blending
-
----
 
 ## 🛠️ Skills
 
