@@ -32,16 +32,18 @@ The project was developed using the Vivado Design Suite, Xilinx IP blocks, and e
 - UART Serial Communication
 - Embedded C
 - C# Windows Forms GUI
-🌡️ Real-Time Temperature Monitoring & Data Logging
+
+  
+## 🌡️ Real-Time Temperature Monitoring & Data Logging
   -Designed a system using LM35 sensor with firmware for real-time measurement and UART-based data logging.
   -Developed embedded firmware in **MPLAB IDE** for the **PIC28 microcontroller**  to continuously measure, average, and transmit temperature data via  via **UART**.
   -Created a **Python-based serial communication** interface to capture data from the microcontroller,
       timestamp readings, and log them into CSV format for further analysis.
 
-🔐 Secure Cloud Data Transmission
+## 🔐 Secure Cloud Data Transmission
 - Engineered a secure data transmission system using RSA encryption, DFS (Distributed File System), and SSH key authentication.
 - Deployed the system on Virtual Private Servers (VPS) with geographically distributed storage for redundancy and security.
--Configured secure file access and permission controls to prevent unauthorized entry and support scalable, multi-user environments.
+ -Configured secure file access and permission controls to prevent unauthorized entry and support scalable, multi-user environments.
 
 
 ## 🛠️ Skills
