@@ -15,7 +15,7 @@ Computer Engineering graduate with strong skills in C, C++, Python, C#, and MATL
 
 ### 🔷 Automated Irrigation System AND Monitoring
   -Built a fully automated system using ESP32, moisture sensors, non-contact water level sensors, humidity and temperature sensors.
-- Designed and soldered a custom PCB **embedded** with **XKC-Y25-PNP** non-contact water level sensors, moisture sensors, relays,Water pumps
+- Designed and soldered a custom **PCB**  **embedded** with  non-contact water level sensors, moisture sensors, relays,Water pumps
 - Used **ESP32** to control water pumps based on soil moisture and tank level readings
 - Implemented **timeout**, **watchdog**, and error-handling logic for reliability
 - Developed real-time algorithms for irrigation control and enabled mobile-based remote monitoring.
